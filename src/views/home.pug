@@ -1,9 +1,9 @@
-extends base
-include mixins/video
+extends base.pug
 
 block content
-    div.video-grid
+    h2 Welcome here you will see the trending videos
+    ul
         each video in videos
-            +video(video)
+            li=video
         else
-            span.empty__message No videos found
+            li Sorry nothing found.
